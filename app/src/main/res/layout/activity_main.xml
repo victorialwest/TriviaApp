@@ -7,18 +7,24 @@
     android:background="@color/colorPrimary"
     tools:context="com.example.victoriawest.triviaapp.MainActivity">
 
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="5dp">
+
+    </FrameLayout>
+
     <Button
         android:id="@+id/add_question_button"
         android:layout_width="194dp"
         android:layout_height="141dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
         android:background="@android:drawable/ic_input_add"
         android:backgroundTint="@color/colorPrimaryDark"
-        android:text="Add question"
+        android:text="@string/add_question"
         android:textColor="@android:color/black"
         android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/take_quiz_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -33,7 +39,7 @@
         android:layout_marginTop="8dp"
         android:background="@android:drawable/ic_media_play"
         android:backgroundTint="@android:color/holo_green_dark"
-        android:text="Take Quiz"
+        android:text="@string/take_quiz"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/delete_quiz_button"
@@ -47,14 +53,12 @@
         android:id="@+id/delete_quiz_button"
         android:layout_width="141dp"
         android:layout_height="126dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
         android:background="@android:drawable/ic_delete"
-        android:text="delete quiz"
+        android:text="@string/delete_quiz"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
